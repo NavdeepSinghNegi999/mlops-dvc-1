@@ -16,6 +16,8 @@ df = pd.DataFrame(data)
 # Check if data folder exists else create it.
 os.makedirs(DATA_DIR, exist_ok=True)
 
+# Add new column.
+df['Address'] = ['a', 'b', 'c']
 
 # Save the dataframe
 df.to_csv(os.path.join(DATA_DIR, "info.csv"), index=False)
