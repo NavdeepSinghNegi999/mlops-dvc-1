@@ -18,6 +18,7 @@ os.makedirs(DATA_DIR, exist_ok=True)
 
 # Add new column.
 df['Address'] = ['a', 'b', 'c']
+df['Random']  = [11, 12, 13]
 
 # Save the dataframe
 df.to_csv(os.path.join(DATA_DIR, "info.csv"), index=False)
